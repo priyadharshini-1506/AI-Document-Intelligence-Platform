@@ -8,4 +8,6 @@ __pycache__/
 backend/.env
 
 uploads/
-vector_db/
+backend/vector_db/chroma.sqlite3
+backend/vector_db/*.bin
+backend/vector_db/__pycache__/
