@@ -2,12 +2,12 @@ import pytesseract
 import cv2
 from PIL import Image
 
+import os
 
-# Tesseract path
-pytesseract.pytesseract.tesseract_cmd = (
-    r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-)
-
+if os.name == "nt":
+    pytesseract.pytesseract.tesseract_cmd = (
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    )
 
 def read_image(image_path):
 
